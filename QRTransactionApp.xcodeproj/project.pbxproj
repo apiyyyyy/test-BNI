@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101493162B6BA53400753089 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014930F2B6BA53400753089 /* TransactionViewModel.swift */; };
+		101493172B6BA53400753089 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101493112B6BA53400753089 /* TransactionViewController.swift */; };
+		101493182B6BA53400753089 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101493132B6BA53400753089 /* ConfirmationViewController.swift */; };
+		101493192B6BA53400753089 /* ScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101493152B6BA53400753089 /* ScanQrViewController.swift */; };
+		101493212B6BA54C00753089 /* PortfolioDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014931C2B6BA54C00753089 /* PortfolioDetailsViewController.swift */; };
+		101493222B6BA54C00753089 /* PortofolioDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014931D2B6BA54C00753089 /* PortofolioDetailsViewModel.swift */; };
+		101493232B6BA54C00753089 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014931F2B6BA54C00753089 /* PortfolioViewController.swift */; };
+		101493242B6BA54C00753089 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101493202B6BA54C00753089 /* PortfolioViewModel.swift */; };
+		1014932F2B6BA59300753089 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101493272B6BA59300753089 /* CoreDataManager.swift */; };
+		101493302B6BA59300753089 /* QRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101493292B6BA59300753089 /* QRData.swift */; };
+		101493322B6BA59300753089 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014932C2B6BA59300753089 /* ChartModel.swift */; };
+		101493362B6BA62600753089 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101493352B6BA62600753089 /* NotificationViewController.swift */; };
+		101493382B6BA7AA00753089 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101493372B6BA7AA00753089 /* Base.storyboard */; };
+		106C81792B6217D2006A0AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C81782B6217D2006A0AF9 /* AppDelegate.swift */; };
+		106C817B2B6217D2006A0AF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C817A2B6217D2006A0AF9 /* SceneDelegate.swift */; };
+		106C81832B6217D2006A0AF9 /* QRTransactionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 106C81812B6217D2006A0AF9 /* QRTransactionApp.xcdatamodeld */; };
+		106C81852B6217D4006A0AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106C81842B6217D4006A0AF9 /* Assets.xcassets */; };
+		106C81882B6217D4006A0AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106C81862B6217D4006A0AF9 /* LaunchScreen.storyboard */; };
+		106C81AF2B6218AE006A0AF9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C81A12B6218AE006A0AF9 /* HomeViewModel.swift */; };
+		106C81B02B6218AE006A0AF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C81A22B6218AE006A0AF9 /* HomeViewController.swift */; };
+		106C81B52B6219E3006A0AF9 /* Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C81B42B6219E3006A0AF9 /* Extension .swift */; };
+		106C81B82B621C41006A0AF9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106C81B72B621C41006A0AF9 /* CoreData.framework */; };
+		107C973D2B6B588A00C87EE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 107C973C2B6B588A00C87EE9 /* GoogleService-Info.plist */; };
+		107C97432B6B9B6F00C87EE9 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 107C97422B6B9B6F00C87EE9 /* DGCharts */; };
+		10889B3B2B68C53A00E5404D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10889B3A2B68C53A00E5404D /* Constant.swift */; };
+		10889B3D2B68EAB300E5404D /* chartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 10889B332B67B9DE00E5404D /* chartData.json */; };
+		10889B422B68FB2A00E5404D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 10889B412B68FB2A00E5404D /* SwiftyJSON */; };
+		10D5BE1E2BB866EA00FFAAA8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 10D5BE1D2BB866EA00FFAAA8 /* FirebaseAnalytics */; };
+		10D5BE202BB866EA00FFAAA8 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 10D5BE1F2BB866EA00FFAAA8 /* FirebaseAnalyticsSwift */; };
+		10D5BE222BB866EA00FFAAA8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 10D5BE212BB866EA00FFAAA8 /* FirebaseCrashlytics */; };
+		10D5BE242BB866EA00FFAAA8 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 10D5BE232BB866EA00FFAAA8 /* FirebaseInAppMessaging-Beta */; };
+		10D5BE262BB866EA00FFAAA8 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 10D5BE252BB866EA00FFAAA8 /* FirebaseInAppMessagingSwift-Beta */; };
+		10D5BE282BB8678900FFAAA8 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 10D5BE272BB8678900FFAAA8 /* FirebaseMessaging */; };
+		10D5BE2A2BB889FD00FFAAA8 /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D5BE292BB889FD00FFAAA8 /* ConfirmationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		107C973F2B6B84BC00C87EE9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1014930F2B6BA53400753089 /* TransactionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		101493112B6BA53400753089 /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		101493132B6BA53400753089 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		101493152B6BA53400753089 /* ScanQrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQrViewController.swift; sourceTree = "<group>"; };
+		1014931C2B6BA54C00753089 /* PortfolioDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioDetailsViewController.swift; sourceTree = "<group>"; };
+		1014931D2B6BA54C00753089 /* PortofolioDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortofolioDetailsViewModel.swift; sourceTree = "<group>"; };
+		1014931F2B6BA54C00753089 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		101493202B6BA54C00753089 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
+		101493272B6BA59300753089 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		101493292B6BA59300753089 /* QRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRData.swift; sourceTree = "<group>"; };
+		1014932C2B6BA59300753089 /* ChartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		101493352B6BA62600753089 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		101493372B6BA7AA00753089 /* Base.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		106C81752B6217D2006A0AF9 /* QRTransactionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRTransactionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		106C81782B6217D2006A0AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		106C817A2B6217D2006A0AF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		106C81822B6217D2006A0AF9 /* QRTransactionApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QRTransactionApp.xcdatamodel; sourceTree = "<group>"; };
+		106C81842B6217D4006A0AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		106C81872B6217D4006A0AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		106C81892B6217D4006A0AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106C81A12B6218AE006A0AF9 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		106C81A22B6218AE006A0AF9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		106C81B42B6219E3006A0AF9 /* Extension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension .swift"; sourceTree = "<group>"; };
+		106C81B72B621C41006A0AF9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		107C973C2B6B588A00C87EE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10889B332B67B9DE00E5404D /* chartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chartData.json; sourceTree = "<group>"; };
+		10889B3A2B68C53A00E5404D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		10D5BE292BB889FD00FFAAA8 /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		106C81722B6217D2006A0AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D5BE282BB8678900FFAAA8 /* FirebaseMessaging in Frameworks */,
+				10889B422B68FB2A00E5404D /* SwiftyJSON in Frameworks */,
+				10D5BE242BB866EA00FFAAA8 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				10D5BE262BB866EA00FFAAA8 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				106C81B82B621C41006A0AF9 /* CoreData.framework in Frameworks */,
+				10D5BE1E2BB866EA00FFAAA8 /* FirebaseAnalytics in Frameworks */,
+				10D5BE222BB866EA00FFAAA8 /* FirebaseCrashlytics in Frameworks */,
+				107C97432B6B9B6F00C87EE9 /* DGCharts in Frameworks */,
+				10D5BE202BB866EA00FFAAA8 /* FirebaseAnalyticsSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1014930C2B6BA53400753089 /* Qr */ = {
+			isa = PBXGroup;
+			children = (
+				1014930D2B6BA53400753089 /* Transaction */,
+				101493122B6BA53400753089 /* Confirmation Payment */,
+				101493142B6BA53400753089 /* ScanQr */,
+			);
+			path = Qr;
+			sourceTree = "<group>";
+		};
+		1014930D2B6BA53400753089 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				1014930E2B6BA53400753089 /* Vm */,
+				101493102B6BA53400753089 /* Vc */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		1014930E2B6BA53400753089 /* Vm */ = {
+			isa = PBXGroup;
+			children = (
+				1014930F2B6BA53400753089 /* TransactionViewModel.swift */,
+			);
+			path = Vm;
+			sourceTree = "<group>";
+		};
+		101493102B6BA53400753089 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				101493112B6BA53400753089 /* TransactionViewController.swift */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		101493122B6BA53400753089 /* Confirmation Payment */ = {
+			isa = PBXGroup;
+			children = (
+				101493132B6BA53400753089 /* ConfirmationViewController.swift */,
+				10D5BE292BB889FD00FFAAA8 /* ConfirmationViewModel.swift */,
+			);
+			path = "Confirmation Payment";
+			sourceTree = "<group>";
+		};
+		101493142B6BA53400753089 /* ScanQr */ = {
+			isa = PBXGroup;
+			children = (
+				101493152B6BA53400753089 /* ScanQrViewController.swift */,
+			);
+			path = ScanQr;
+			sourceTree = "<group>";
+		};
+		1014931A2B6BA54C00753089 /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				1014931B2B6BA54C00753089 /* Portfolio Detail */,
+				1014931E2B6BA54C00753089 /* Porto */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		1014931B2B6BA54C00753089 /* Portfolio Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1014931C2B6BA54C00753089 /* PortfolioDetailsViewController.swift */,
+				1014931D2B6BA54C00753089 /* PortofolioDetailsViewModel.swift */,
+			);
+			path = "Portfolio Detail";
+			sourceTree = "<group>";
+		};
+		1014931E2B6BA54C00753089 /* Porto */ = {
+			isa = PBXGroup;
+			children = (
+				1014931F2B6BA54C00753089 /* PortfolioViewController.swift */,
+				101493202B6BA54C00753089 /* PortfolioViewModel.swift */,
+			);
+			path = Porto;
+			sourceTree = "<group>";
+		};
+		101493252B6BA59300753089 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				101493262B6BA59300753089 /* CoreData */,
+				101493282B6BA59300753089 /* Qr Data */,
+				1014932B2B6BA59300753089 /* Chart Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		101493262B6BA59300753089 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				101493272B6BA59300753089 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		101493282B6BA59300753089 /* Qr Data */ = {
+			isa = PBXGroup;
+			children = (
+				101493292B6BA59300753089 /* QRData.swift */,
+			);
+			path = "Qr Data";
+			sourceTree = "<group>";
+		};
+		1014932B2B6BA59300753089 /* Chart Data */ = {
+			isa = PBXGroup;
+			children = (
+				1014932C2B6BA59300753089 /* ChartModel.swift */,
+			);
+			path = "Chart Data";
+			sourceTree = "<group>";
+		};
+		101493342B6BA62600753089 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				101493352B6BA62600753089 /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		106C816C2B6217D2006A0AF9 = {
+			isa = PBXGroup;
+			children = (
+				106C81772B6217D2006A0AF9 /* QRTransactionApp */,
+				106C81762B6217D2006A0AF9 /* Products */,
+				106C81B62B621C41006A0AF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		106C81762B6217D2006A0AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				106C81752B6217D2006A0AF9 /* QRTransactionApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		106C81772B6217D2006A0AF9 /* QRTransactionApp */ = {
+			isa = PBXGroup;
+			children = (
+				106C819A2B6218AE006A0AF9 /* Page */,
+				10889B302B67B6EC00E5404D /* Delegate */,
+				101493252B6BA59300753089 /* Model */,
+				10889B2F2B67B6E200E5404D /* Extension */,
+				10889B3C2B68EA8C00E5404D /* Data */,
+				106C81842B6217D4006A0AF9 /* Assets.xcassets */,
+				106C81862B6217D4006A0AF9 /* LaunchScreen.storyboard */,
+				107C973C2B6B588A00C87EE9 /* GoogleService-Info.plist */,
+				106C81892B6217D4006A0AF9 /* Info.plist */,
+				106C81812B6217D2006A0AF9 /* QRTransactionApp.xcdatamodeld */,
+			);
+			path = QRTransactionApp;
+			sourceTree = "<group>";
+		};
+		106C819A2B6218AE006A0AF9 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				101493372B6BA7AA00753089 /* Base.storyboard */,
+				101493342B6BA62600753089 /* Notification */,
+				1014931A2B6BA54C00753089 /* Portfolio */,
+				1014930C2B6BA53400753089 /* Qr */,
+				106C81A02B6218AE006A0AF9 /* Home */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		106C81A02B6218AE006A0AF9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				106C81A12B6218AE006A0AF9 /* HomeViewModel.swift */,
+				106C81A22B6218AE006A0AF9 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		106C81B62B621C41006A0AF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106C81B72B621C41006A0AF9 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10889B2F2B67B6E200E5404D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				106C81B42B6219E3006A0AF9 /* Extension .swift */,
+				10889B3A2B68C53A00E5404D /* Constant.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		10889B302B67B6EC00E5404D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				106C81782B6217D2006A0AF9 /* AppDelegate.swift */,
+				106C817A2B6217D2006A0AF9 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		10889B3C2B68EA8C00E5404D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				10889B332B67B9DE00E5404D /* chartData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		106C81742B6217D2006A0AF9 /* QRTransactionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106C818C2B6217D4006A0AF9 /* Build configuration list for PBXNativeTarget "QRTransactionApp" */;
+			buildPhases = (
+				106C81712B6217D2006A0AF9 /* Sources */,
+				106C81722B6217D2006A0AF9 /* Frameworks */,
+				106C81732B6217D2006A0AF9 /* Resources */,
+				107C973F2B6B84BC00C87EE9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRTransactionApp;
+			packageProductDependencies = (
+				10889B412B68FB2A00E5404D /* SwiftyJSON */,
+				107C97422B6B9B6F00C87EE9 /* DGCharts */,
+				10D5BE1D2BB866EA00FFAAA8 /* FirebaseAnalytics */,
+				10D5BE1F2BB866EA00FFAAA8 /* FirebaseAnalyticsSwift */,
+				10D5BE212BB866EA00FFAAA8 /* FirebaseCrashlytics */,
+				10D5BE232BB866EA00FFAAA8 /* FirebaseInAppMessaging-Beta */,
+				10D5BE252BB866EA00FFAAA8 /* FirebaseInAppMessagingSwift-Beta */,
+				10D5BE272BB8678900FFAAA8 /* FirebaseMessaging */,
+			);
+			productName = QRTransactionApp;
+			productReference = 106C81752B6217D2006A0AF9 /* QRTransactionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		106C816D2B6217D2006A0AF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					106C81742B6217D2006A0AF9 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 106C81702B6217D2006A0AF9 /* Build configuration list for PBXProject "QRTransactionApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 106C816C2B6217D2006A0AF9;
+			packageReferences = (
+				10889B402B68FB2A00E5404D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				107C97412B6B9B6F00C87EE9 /* XCRemoteSwiftPackageReference "Charts" */,
+				10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 106C81762B6217D2006A0AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				106C81742B6217D2006A0AF9 /* QRTransactionApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		106C81732B6217D2006A0AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106C81882B6217D4006A0AF9 /* LaunchScreen.storyboard in Resources */,
+				10889B3D2B68EAB300E5404D /* chartData.json in Resources */,
+				101493382B6BA7AA00753089 /* Base.storyboard in Resources */,
+				106C81852B6217D4006A0AF9 /* Assets.xcassets in Resources */,
+				107C973D2B6B588A00C87EE9 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		106C81712B6217D2006A0AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101493172B6BA53400753089 /* TransactionViewController.swift in Sources */,
+				10889B3B2B68C53A00E5404D /* Constant.swift in Sources */,
+				101493182B6BA53400753089 /* ConfirmationViewController.swift in Sources */,
+				1014932F2B6BA59300753089 /* CoreDataManager.swift in Sources */,
+				101493302B6BA59300753089 /* QRData.swift in Sources */,
+				106C81792B6217D2006A0AF9 /* AppDelegate.swift in Sources */,
+				101493222B6BA54C00753089 /* PortofolioDetailsViewModel.swift in Sources */,
+				106C817B2B6217D2006A0AF9 /* SceneDelegate.swift in Sources */,
+				106C81AF2B6218AE006A0AF9 /* HomeViewModel.swift in Sources */,
+				101493322B6BA59300753089 /* ChartModel.swift in Sources */,
+				101493362B6BA62600753089 /* NotificationViewController.swift in Sources */,
+				106C81832B6217D2006A0AF9 /* QRTransactionApp.xcdatamodeld in Sources */,
+				101493192B6BA53400753089 /* ScanQrViewController.swift in Sources */,
+				101493242B6BA54C00753089 /* PortfolioViewModel.swift in Sources */,
+				106C81B52B6219E3006A0AF9 /* Extension .swift in Sources */,
+				10D5BE2A2BB889FD00FFAAA8 /* ConfirmationViewModel.swift in Sources */,
+				106C81B02B6218AE006A0AF9 /* HomeViewController.swift in Sources */,
+				101493162B6BA53400753089 /* TransactionViewModel.swift in Sources */,
+				101493212B6BA54C00753089 /* PortfolioDetailsViewController.swift in Sources */,
+				101493232B6BA54C00753089 /* PortfolioViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		106C81862B6217D4006A0AF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				106C81872B6217D4006A0AF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		106C818A2B6217D4006A0AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		106C818B2B6217D4006A0AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		106C818D2B6217D4006A0AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D662H8CQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRTransactionApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera for scan QR";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Base;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = piy.QRTransactionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		106C818E2B6217D4006A0AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D662H8CQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRTransactionApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera for scan QR";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Base;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = piy.QRTransactionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		106C81702B6217D2006A0AF9 /* Build configuration list for PBXProject "QRTransactionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106C818A2B6217D4006A0AF9 /* Debug */,
+				106C818B2B6217D4006A0AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		106C818C2B6217D4006A0AF9 /* Build configuration list for PBXNativeTarget "QRTransactionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106C818D2B6217D4006A0AF9 /* Debug */,
+				106C818E2B6217D4006A0AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		107C97412B6B9B6F00C87EE9 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		10889B402B68FB2A00E5404D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		107C97422B6B9B6F00C87EE9 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 107C97412B6B9B6F00C87EE9 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		10889B412B68FB2A00E5404D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10889B402B68FB2A00E5404D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		10D5BE1D2BB866EA00FFAAA8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		10D5BE1F2BB866EA00FFAAA8 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		10D5BE212BB866EA00FFAAA8 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		10D5BE232BB866EA00FFAAA8 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		10D5BE252BB866EA00FFAAA8 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		10D5BE272BB8678900FFAAA8 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10D5BE1C2BB865A500FFAAA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		106C81812B6217D2006A0AF9 /* QRTransactionApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				106C81822B6217D2006A0AF9 /* QRTransactionApp.xcdatamodel */,
+			);
+			currentVersion = 106C81822B6217D2006A0AF9 /* QRTransactionApp.xcdatamodel */;
+			path = QRTransactionApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 106C816D2B6217D2006A0AF9 /* Project object */;
+}
